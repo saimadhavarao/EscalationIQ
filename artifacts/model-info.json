@@ -1,0 +1,9 @@
+{
+  "selected": "baseline",
+  "seed": 42,
+  "threshold": 0.5614499876721248,
+  "sklearn": "1.8.0",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "version": "a6e727d5f436"
+}

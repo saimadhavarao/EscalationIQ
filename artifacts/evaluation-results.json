@@ -1,0 +1,2415 @@
+{
+  "model": {
+    "selected": "baseline",
+    "seed": 42,
+    "threshold": 0.5614499876721248,
+    "sklearn": "1.8.0",
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "version": "a6e727d5f436"
+  },
+  "split_counts": {
+    "train": 480,
+    "validation": 180,
+    "test": 240
+  },
+  "validation": {
+    "baseline": {
+      "strength": 0.1,
+      "tickets": 90,
+      "positives": 29,
+      "threshold": 0.5614499876721248,
+      "precision": 0.5,
+      "recall": 0.3448275862068966,
+      "f1": 0.40816326530612246,
+      "pr_auc": 0.40915503777938916,
+      "roc_auc": 0.5924250989259469,
+      "prefix_brier": 0.20926971076991616,
+      "prefix_ece": 0.05282476936220136,
+      "reliability_bins": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.16010815845309823,
+          "observed": 0.19996678205931007,
+          "weight": 0.09449220532553863
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.25542023305588585,
+          "observed": 0.22514991696972786,
+          "weight": 0.24967776051109386
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.35293532001581246,
+          "observed": 0.29128958288396556,
+          "weight": 0.2401524401524401
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.4477583153528974,
+          "observed": 0.3738059960260096,
+          "weight": 0.26151783401783396
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5368844873728605,
+          "observed": 0.49164104922902274,
+          "weight": 0.11684028934028932
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6350634096638883,
+          "observed": 0.5834958927644646,
+          "weight": 0.034457517790851135
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.7495223502052685,
+          "observed": 0.6470588235294118,
+          "weight": 0.002861952861952862
+        }
+      ],
+      "by_category": {
+        "recurring": {
+          "tickets": 9,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "billing": {
+          "tickets": 7,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "cancellation": {
+          "tickets": 12,
+          "missed": 2,
+          "false_alerts": 2
+        },
+        "technical": {
+          "tickets": 12,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "delivery": {
+          "tickets": 14,
+          "missed": 3,
+          "false_alerts": 2
+        },
+        "routine": {
+          "tickets": 8,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 12,
+          "missed": 4,
+          "false_alerts": 1
+        },
+        "access": {
+          "tickets": 9,
+          "missed": 0,
+          "false_alerts": 4
+        },
+        "refund": {
+          "tickets": 7,
+          "missed": 0,
+          "false_alerts": 1
+        }
+      },
+      "confusion_matrix": [
+        [
+          51,
+          10
+        ],
+        [
+          19,
+          10
+        ]
+      ],
+      "alert_rate": 0.2222222222222222,
+      "false_alerts_per_100": 11.11111111111111,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.5,
+          "recall": 0.06896551724137931
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.3333333333333333,
+          "recall": 0.10344827586206896
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.38461538461538464,
+          "recall": 0.1724137931034483
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.45454545454545453,
+          "recall": 0.3448275862068966
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.3870967741935484,
+          "recall": 0.41379310344827586
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.37777777777777777,
+          "recall": 0.5862068965517241
+        }
+      ],
+      "lead_messages": [
+        5,
+        6,
+        5,
+        6,
+        8,
+        11,
+        2,
+        1,
+        2,
+        4
+      ],
+      "lead_minutes": [
+        60.0,
+        57.0,
+        28.0,
+        66.0,
+        55.0,
+        60.0,
+        21.0,
+        19.0,
+        17.0,
+        31.0
+      ],
+      "detected_at_least": {
+        "1": 10,
+        "2": 9,
+        "3": 7
+      }
+    },
+    "structured": {
+      "strength": 15,
+      "tickets": 90,
+      "positives": 29,
+      "threshold": 0.4881930609521887,
+      "precision": 0.36363636363636365,
+      "recall": 0.27586206896551724,
+      "f1": 0.3137254901960784,
+      "pr_auc": 0.3629637750163141,
+      "roc_auc": 0.5483323911814584,
+      "prefix_brier": 0.21549739035552104,
+      "prefix_ece": 0.050471450543554626,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.09437632674545796,
+          "observed": 1.0,
+          "weight": 0.002777777777777778
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.16664248074341864,
+          "observed": 0.14833156380424017,
+          "weight": 0.06688148271481603
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.256094661346974,
+          "observed": 0.2552306383348181,
+          "weight": 0.16478068228068227
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.35552646692365286,
+          "observed": 0.2677106328133037,
+          "weight": 0.34410441410441406
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.44693301931263246,
+          "observed": 0.42335702906354067,
+          "weight": 0.3787808796142129
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5217789193333408,
+          "observed": 0.36863692383534624,
+          "weight": 0.04065456148789482
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6013866426668001,
+          "observed": 0.0,
+          "weight": 0.00202020202020202
+        }
+      ],
+      "by_category": {
+        "recurring": {
+          "tickets": 9,
+          "missed": 2,
+          "false_alerts": 1
+        },
+        "billing": {
+          "tickets": 7,
+          "missed": 3,
+          "false_alerts": 1
+        },
+        "cancellation": {
+          "tickets": 12,
+          "missed": 1,
+          "false_alerts": 2
+        },
+        "technical": {
+          "tickets": 12,
+          "missed": 1,
+          "false_alerts": 1
+        },
+        "delivery": {
+          "tickets": 14,
+          "missed": 3,
+          "false_alerts": 2
+        },
+        "routine": {
+          "tickets": 8,
+          "missed": 2,
+          "false_alerts": 2
+        },
+        "defect": {
+          "tickets": 12,
+          "missed": 5,
+          "false_alerts": 2
+        },
+        "access": {
+          "tickets": 9,
+          "missed": 2,
+          "false_alerts": 1
+        },
+        "refund": {
+          "tickets": 7,
+          "missed": 2,
+          "false_alerts": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          47,
+          14
+        ],
+        [
+          21,
+          8
+        ]
+      ],
+      "alert_rate": 0.24444444444444444,
+      "false_alerts_per_100": 15.555555555555555,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.25,
+          "recall": 0.034482758620689655
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.3333333333333333,
+          "recall": 0.10344827586206896
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.3076923076923077,
+          "recall": 0.13793103448275862
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.36363636363636365,
+          "recall": 0.27586206896551724
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.41935483870967744,
+          "recall": 0.4482758620689655
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.35555555555555557,
+          "recall": 0.5517241379310345
+        }
+      ],
+      "lead_messages": [
+        4,
+        3,
+        7,
+        11,
+        5,
+        3,
+        7,
+        5
+      ],
+      "lead_minutes": [
+        43.0,
+        32.0,
+        72.0,
+        60.0,
+        32.0,
+        22.0,
+        53.0,
+        31.0
+      ],
+      "detected_at_least": {
+        "1": 8,
+        "2": 8,
+        "3": 8
+      }
+    },
+    "hybrid": {
+      "strength": 0.03,
+      "tickets": 90,
+      "positives": 29,
+      "threshold": 0.6407235888509921,
+      "precision": 0.3333333333333333,
+      "recall": 0.20689655172413793,
+      "f1": 0.2553191489361702,
+      "pr_auc": 0.36875975747230705,
+      "roc_auc": 0.5805539853024307,
+      "prefix_brier": 0.2071299632761737,
+      "prefix_ece": 0.04500354941510121,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.07980663004906637,
+          "observed": 0.13286048626937974,
+          "weight": 0.027152569652569656
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.1516524563241424,
+          "observed": 0.13745202782662552,
+          "weight": 0.16727161727161727
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.25182803331165765,
+          "observed": 0.2572472541219136,
+          "weight": 0.19915689249022575
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.34819983778163827,
+          "observed": 0.2913998341646384,
+          "weight": 0.22456330706330704
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.4483581877189388,
+          "observed": 0.4702094971028804,
+          "weight": 0.20323956907290242
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5530794324645911,
+          "observed": 0.48255456620004206,
+          "weight": 0.10414684081350746
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.642803982107871,
+          "observed": 0.4579608543145185,
+          "weight": 0.06425703925703927
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.7239835754290569,
+          "observed": 0.36267568424389723,
+          "weight": 0.010212164378831047
+        }
+      ],
+      "by_category": {
+        "recurring": {
+          "tickets": 9,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "billing": {
+          "tickets": 7,
+          "missed": 2,
+          "false_alerts": 1
+        },
+        "cancellation": {
+          "tickets": 12,
+          "missed": 1,
+          "false_alerts": 4
+        },
+        "technical": {
+          "tickets": 12,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "delivery": {
+          "tickets": 14,
+          "missed": 6,
+          "false_alerts": 1
+        },
+        "routine": {
+          "tickets": 8,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 12,
+          "missed": 3,
+          "false_alerts": 5
+        },
+        "access": {
+          "tickets": 9,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "refund": {
+          "tickets": 7,
+          "missed": 2,
+          "false_alerts": 1
+        }
+      },
+      "confusion_matrix": [
+        [
+          49,
+          12
+        ],
+        [
+          23,
+          6
+        ]
+      ],
+      "alert_rate": 0.2,
+      "false_alerts_per_100": 13.333333333333334,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.25,
+          "recall": 0.034482758620689655
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.2222222222222222,
+          "recall": 0.06896551724137931
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.3076923076923077,
+          "recall": 0.13793103448275862
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.2727272727272727,
+          "recall": 0.20689655172413793
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.3870967741935484,
+          "recall": 0.41379310344827586
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.35555555555555557,
+          "recall": 0.5517241379310345
+        }
+      ],
+      "lead_messages": [
+        7,
+        11,
+        3,
+        2,
+        7,
+        3
+      ],
+      "lead_minutes": [
+        72.0,
+        60.0,
+        21.0,
+        21.0,
+        44.0,
+        39.0
+      ],
+      "detected_at_least": {
+        "1": 6,
+        "2": 6,
+        "3": 5
+      }
+    },
+    "without_embeddings": {
+      "strength": 0.12,
+      "tickets": 90,
+      "positives": 29,
+      "threshold": 0.5754989671822466,
+      "precision": 0.47619047619047616,
+      "recall": 0.3448275862068966,
+      "f1": 0.4,
+      "pr_auc": 0.41263240621557185,
+      "roc_auc": 0.6037309214245337,
+      "prefix_brier": 0.20160065714213707,
+      "prefix_ece": 0.04843148721844771,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.07666726671404511,
+          "observed": 0.11274111882639441,
+          "weight": 0.04223751557084891
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.15558337953522258,
+          "observed": 0.11530784764070608,
+          "weight": 0.1240309998643332
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.2543155090919217,
+          "observed": 0.20745683864632913,
+          "weight": 0.17877039627039626
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.35003591717627214,
+          "observed": 0.2922725032528165,
+          "weight": 0.1950061975061975
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.45389624170237575,
+          "observed": 0.402880744865124,
+          "weight": 0.23841942008608674
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5442484216613965,
+          "observed": 0.5149016398401776,
+          "weight": 0.1885625177291844
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.621878900488884,
+          "observed": 0.48314556308631434,
+          "weight": 0.032972952972952975
+        }
+      ],
+      "by_category": {
+        "recurring": {
+          "tickets": 9,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "billing": {
+          "tickets": 7,
+          "missed": 1,
+          "false_alerts": 0
+        },
+        "cancellation": {
+          "tickets": 12,
+          "missed": 1,
+          "false_alerts": 3
+        },
+        "technical": {
+          "tickets": 12,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "delivery": {
+          "tickets": 14,
+          "missed": 2,
+          "false_alerts": 5
+        },
+        "routine": {
+          "tickets": 8,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 12,
+          "missed": 4,
+          "false_alerts": 3
+        },
+        "access": {
+          "tickets": 9,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "refund": {
+          "tickets": 7,
+          "missed": 2,
+          "false_alerts": 0
+        }
+      },
+      "confusion_matrix": [
+        [
+          50,
+          11
+        ],
+        [
+          19,
+          10
+        ]
+      ],
+      "alert_rate": 0.23333333333333334,
+      "false_alerts_per_100": 12.222222222222221,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.5,
+          "recall": 0.06896551724137931
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.4444444444444444,
+          "recall": 0.13793103448275862
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.38461538461538464,
+          "recall": 0.1724137931034483
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.45454545454545453,
+          "recall": 0.3448275862068966
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.3870967741935484,
+          "recall": 0.41379310344827586
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.37777777777777777,
+          "recall": 0.5862068965517241
+        }
+      ],
+      "lead_messages": [
+        4,
+        3,
+        7,
+        11,
+        3,
+        2,
+        5,
+        5,
+        6,
+        3
+      ],
+      "lead_minutes": [
+        43.0,
+        32.0,
+        72.0,
+        60.0,
+        36.0,
+        25.0,
+        32.0,
+        73.0,
+        37.0,
+        39.0
+      ],
+      "detected_at_least": {
+        "1": 10,
+        "2": 10,
+        "3": 9
+      }
+    },
+    "without_sentiment_trend": {
+      "strength": 0.03,
+      "tickets": 90,
+      "positives": 29,
+      "threshold": 0.640743884095131,
+      "precision": 0.3333333333333333,
+      "recall": 0.20689655172413793,
+      "f1": 0.2553191489361702,
+      "pr_auc": 0.36877443014287187,
+      "roc_auc": 0.5805539853024307,
+      "prefix_brier": 0.2072049589087039,
+      "prefix_ece": 0.04764685087268865,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.07845155526093639,
+          "observed": 0.13918911041503337,
+          "weight": 0.025918001751335087
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.1504822440865228,
+          "observed": 0.13123722916628316,
+          "weight": 0.16749608416275083
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.2511358955054045,
+          "observed": 0.2628190103974794,
+          "weight": 0.19877810461143788
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.3478667548037558,
+          "observed": 0.2896086500153108,
+          "weight": 0.22595219595219593
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.44850916563857396,
+          "observed": 0.4702094971028804,
+          "weight": 0.20323956907290242
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.553194152000049,
+          "observed": 0.48255456620004206,
+          "weight": 0.10414684081350746
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6430978389154943,
+          "observed": 0.4579608543145185,
+          "weight": 0.06425703925703927
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.7249579284581252,
+          "observed": 0.36267568424389723,
+          "weight": 0.010212164378831047
+        }
+      ],
+      "by_category": {
+        "recurring": {
+          "tickets": 9,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "billing": {
+          "tickets": 7,
+          "missed": 2,
+          "false_alerts": 1
+        },
+        "cancellation": {
+          "tickets": 12,
+          "missed": 1,
+          "false_alerts": 4
+        },
+        "technical": {
+          "tickets": 12,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "delivery": {
+          "tickets": 14,
+          "missed": 6,
+          "false_alerts": 1
+        },
+        "routine": {
+          "tickets": 8,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 12,
+          "missed": 3,
+          "false_alerts": 5
+        },
+        "access": {
+          "tickets": 9,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "refund": {
+          "tickets": 7,
+          "missed": 2,
+          "false_alerts": 1
+        }
+      },
+      "confusion_matrix": [
+        [
+          49,
+          12
+        ],
+        [
+          23,
+          6
+        ]
+      ],
+      "alert_rate": 0.2,
+      "false_alerts_per_100": 13.333333333333334,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.25,
+          "recall": 0.034482758620689655
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.2222222222222222,
+          "recall": 0.06896551724137931
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.3076923076923077,
+          "recall": 0.13793103448275862
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.2727272727272727,
+          "recall": 0.20689655172413793
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.3870967741935484,
+          "recall": 0.41379310344827586
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.35555555555555557,
+          "recall": 0.5517241379310345
+        }
+      ],
+      "lead_messages": [
+        7,
+        11,
+        3,
+        2,
+        7,
+        3
+      ],
+      "lead_minutes": [
+        72.0,
+        60.0,
+        21.0,
+        21.0,
+        44.0,
+        39.0
+      ],
+      "detected_at_least": {
+        "1": 6,
+        "2": 6,
+        "3": 5
+      }
+    },
+    "without_history": {
+      "strength": 0.03,
+      "tickets": 90,
+      "positives": 29,
+      "threshold": 0.6094955568677074,
+      "precision": 0.42857142857142855,
+      "recall": 0.3103448275862069,
+      "f1": 0.36,
+      "pr_auc": 0.38220707042982777,
+      "roc_auc": 0.5924250989259469,
+      "prefix_brier": 0.20441927407319208,
+      "prefix_ece": 0.041638468054434434,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.08134077737429653,
+          "observed": 0.11033817918427813,
+          "weight": 0.023540379373712703
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.15519034523621716,
+          "observed": 0.16724643561608526,
+          "weight": 0.18253003169669835
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.2555510375610294,
+          "observed": 0.23761079818458852,
+          "weight": 0.19726162726162721
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.3481800347987649,
+          "observed": 0.2910073642937075,
+          "weight": 0.237868828702162
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.44816434136058814,
+          "observed": 0.47923019184475574,
+          "weight": 0.19039741123074458
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5521035773291515,
+          "observed": 0.47060265520996053,
+          "weight": 0.1167232150565484
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6375032670330896,
+          "observed": 0.5278984043321213,
+          "weight": 0.050823805823805815
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.7234101191962403,
+          "observed": 0.0,
+          "weight": 0.0008547008547008547
+        }
+      ],
+      "by_category": {
+        "recurring": {
+          "tickets": 9,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "billing": {
+          "tickets": 7,
+          "missed": 1,
+          "false_alerts": 1
+        },
+        "cancellation": {
+          "tickets": 12,
+          "missed": 1,
+          "false_alerts": 3
+        },
+        "technical": {
+          "tickets": 12,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "delivery": {
+          "tickets": 14,
+          "missed": 6,
+          "false_alerts": 1
+        },
+        "routine": {
+          "tickets": 8,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 12,
+          "missed": 3,
+          "false_alerts": 6
+        },
+        "access": {
+          "tickets": 9,
+          "missed": 2,
+          "false_alerts": 0
+        },
+        "refund": {
+          "tickets": 7,
+          "missed": 0,
+          "false_alerts": 1
+        }
+      },
+      "confusion_matrix": [
+        [
+          49,
+          12
+        ],
+        [
+          20,
+          9
+        ]
+      ],
+      "alert_rate": 0.23333333333333334,
+      "false_alerts_per_100": 13.333333333333334,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.25,
+          "recall": 0.034482758620689655
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.1111111111111111,
+          "recall": 0.034482758620689655
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.15384615384615385,
+          "recall": 0.06896551724137931
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.4090909090909091,
+          "recall": 0.3103448275862069
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.45161290322580644,
+          "recall": 0.4827586206896552
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.37777777777777777,
+          "recall": 0.5862068965517241
+        }
+      ],
+      "lead_messages": [
+        7,
+        8,
+        3,
+        2,
+        9,
+        6,
+        6,
+        3,
+        4
+      ],
+      "lead_minutes": [
+        72.0,
+        55.0,
+        21.0,
+        21.0,
+        53.0,
+        80.0,
+        37.0,
+        39.0,
+        31.0
+      ],
+      "detected_at_least": {
+        "1": 9,
+        "2": 9,
+        "3": 8
+      }
+    }
+  },
+  "holdout": {
+    "baseline": {
+      "tickets": 240,
+      "positives": 77,
+      "threshold": 0.5614499876721248,
+      "precision": 0.4,
+      "recall": 0.15584415584415584,
+      "f1": 0.22429906542056074,
+      "pr_auc": 0.37148523650670917,
+      "roc_auc": 0.5645366903035615,
+      "prefix_brier": 0.20383297350474897,
+      "prefix_ece": 0.052331788322439725,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.08505904537724295,
+          "observed": 0.0,
+          "weight": 0.004245823620823622
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.15719932290504698,
+          "observed": 0.14900543850464737,
+          "weight": 0.08054950836200836
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.25507223661077427,
+          "observed": 0.13519114427347614,
+          "weight": 0.1825262006512007
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.3572134024307026,
+          "observed": 0.29360484278282756,
+          "weight": 0.2871451580826581
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.44653683471687067,
+          "observed": 0.4279218378524186,
+          "weight": 0.3279160076035076
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5367958235021054,
+          "observed": 0.4986172500090843,
+          "weight": 0.10468766187516187
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6442153066146392,
+          "observed": 0.6074151402992629,
+          "weight": 0.01206158424908425
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.7136060269747591,
+          "observed": 0.0,
+          "weight": 0.0008680555555555556
+        }
+      ],
+      "by_category": {
+        "refund": {
+          "tickets": 28,
+          "missed": 9,
+          "false_alerts": 6
+        },
+        "delivery": {
+          "tickets": 26,
+          "missed": 6,
+          "false_alerts": 4
+        },
+        "billing": {
+          "tickets": 33,
+          "missed": 12,
+          "false_alerts": 0
+        },
+        "access": {
+          "tickets": 24,
+          "missed": 6,
+          "false_alerts": 5
+        },
+        "recurring": {
+          "tickets": 23,
+          "missed": 4,
+          "false_alerts": 0
+        },
+        "technical": {
+          "tickets": 31,
+          "missed": 10,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 34,
+          "missed": 9,
+          "false_alerts": 3
+        },
+        "routine": {
+          "tickets": 25,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "cancellation": {
+          "tickets": 16,
+          "missed": 6,
+          "false_alerts": 0
+        }
+      },
+      "confusion_matrix": [
+        [
+          145,
+          18
+        ],
+        [
+          65,
+          12
+        ]
+      ],
+      "alert_rate": 0.125,
+      "false_alerts_per_100": 7.5,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.4166666666666667,
+          "recall": 0.06493506493506493
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.3333333333333333,
+          "recall": 0.1038961038961039
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.4166666666666667,
+          "recall": 0.19480519480519481
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.38333333333333336,
+          "recall": 0.2987012987012987
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.36904761904761907,
+          "recall": 0.4025974025974026
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.3416666666666667,
+          "recall": 0.5324675324675324
+        }
+      ],
+      "lead_messages": [
+        4,
+        2,
+        2,
+        5,
+        3,
+        2,
+        7,
+        5,
+        4,
+        3,
+        4,
+        6
+      ],
+      "lead_minutes": [
+        29.0,
+        20.0,
+        27.0,
+        29.0,
+        13.0,
+        11.0,
+        69.0,
+        45.0,
+        32.0,
+        18.0,
+        48.0,
+        59.0
+      ],
+      "detected_at_least": {
+        "1": 12,
+        "2": 12,
+        "3": 9
+      },
+      "ci95": {
+        "pr_auc": [
+          0.2810124167861265,
+          0.4763875048749769
+        ],
+        "precision": [
+          0.21035714285714285,
+          0.5666666666666667
+        ],
+        "recall": [
+          0.07119747899159663,
+          0.2533849765258216
+        ]
+      },
+      "inference_latency_ms": {
+        "p50": 2.0489204999876165,
+        "p95": 2.7356506499813795
+      }
+    },
+    "structured": {
+      "tickets": 240,
+      "positives": 77,
+      "threshold": 0.4881930609521887,
+      "precision": 0.5,
+      "recall": 0.2077922077922078,
+      "f1": 0.29357798165137616,
+      "pr_auc": 0.42311399623146045,
+      "roc_auc": 0.5967651979921919,
+      "prefix_brier": 0.20378333746029256,
+      "prefix_ece": 0.06379377825322857,
+      "reliability_bins": [
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.17170996699765267,
+          "observed": 0.21975865681109327,
+          "weight": 0.05092918655418656
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.2535860433769911,
+          "observed": 0.1322950104883148,
+          "weight": 0.2190670787545788
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.35004652753604126,
+          "observed": 0.29090397181203487,
+          "weight": 0.38200800357050363
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.444681323649164,
+          "observed": 0.479557701216955,
+          "weight": 0.3159912656787657
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5259818131532563,
+          "observed": 0.5622975262206591,
+          "weight": 0.03200446544196545
+        }
+      ],
+      "by_category": {
+        "refund": {
+          "tickets": 28,
+          "missed": 11,
+          "false_alerts": 2
+        },
+        "delivery": {
+          "tickets": 26,
+          "missed": 3,
+          "false_alerts": 2
+        },
+        "billing": {
+          "tickets": 33,
+          "missed": 10,
+          "false_alerts": 1
+        },
+        "access": {
+          "tickets": 24,
+          "missed": 9,
+          "false_alerts": 1
+        },
+        "recurring": {
+          "tickets": 23,
+          "missed": 4,
+          "false_alerts": 0
+        },
+        "technical": {
+          "tickets": 31,
+          "missed": 7,
+          "false_alerts": 6
+        },
+        "defect": {
+          "tickets": 34,
+          "missed": 8,
+          "false_alerts": 1
+        },
+        "routine": {
+          "tickets": 25,
+          "missed": 3,
+          "false_alerts": 1
+        },
+        "cancellation": {
+          "tickets": 16,
+          "missed": 6,
+          "false_alerts": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          147,
+          16
+        ],
+        [
+          61,
+          16
+        ]
+      ],
+      "alert_rate": 0.13333333333333333,
+      "false_alerts_per_100": 6.666666666666667,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.5,
+          "recall": 0.07792207792207792
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.5,
+          "recall": 0.15584415584415584
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.4722222222222222,
+          "recall": 0.22077922077922077
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.4,
+          "recall": 0.3116883116883117
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.39285714285714285,
+          "recall": 0.42857142857142855
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.375,
+          "recall": 0.5844155844155844
+        }
+      ],
+      "lead_messages": [
+        4,
+        6,
+        5,
+        4,
+        5,
+        6,
+        8,
+        4,
+        1,
+        6,
+        6,
+        4,
+        9,
+        8,
+        7,
+        3
+      ],
+      "lead_minutes": [
+        31.0,
+        38.0,
+        38.0,
+        29.0,
+        52.0,
+        51.0,
+        96.0,
+        50.0,
+        17.0,
+        69.0,
+        49.0,
+        49.0,
+        67.0,
+        81.0,
+        67.0,
+        38.0
+      ],
+      "detected_at_least": {
+        "1": 16,
+        "2": 15,
+        "3": 15
+      },
+      "ci95": {
+        "pr_auc": [
+          0.32308692901015656,
+          0.5359304857375444
+        ],
+        "precision": [
+          0.31320197044334974,
+          0.6767314990512334
+        ],
+        "recall": [
+          0.11428571428571428,
+          0.29432503770739066
+        ]
+      },
+      "inference_latency_ms": {
+        "p50": 1.2952729999824442,
+        "p95": 1.948982500044849
+      }
+    },
+    "hybrid": {
+      "tickets": 240,
+      "positives": 77,
+      "threshold": 0.6407235888509921,
+      "precision": 0.375,
+      "recall": 0.19480519480519481,
+      "f1": 0.2564102564102564,
+      "pr_auc": 0.35790485509318426,
+      "roc_auc": 0.5734204445860888,
+      "prefix_brier": 0.20965308867725288,
+      "prefix_ece": 0.03890993441182099,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.07522697549506485,
+          "observed": 0.14118307790892198,
+          "weight": 0.045416470103970104
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.15193551303401182,
+          "observed": 0.1408985313990478,
+          "weight": 0.17388869232619236
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.25300349596819877,
+          "observed": 0.2557226799574381,
+          "weight": 0.19145735051985052
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.34852242726540383,
+          "observed": 0.3511293205151151,
+          "weight": 0.19354594479594484
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.44926499631311295,
+          "observed": 0.4406913530043051,
+          "weight": 0.18174680643430643
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5431278314747949,
+          "observed": 0.4461912214579132,
+          "weight": 0.13307816026566027
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6390987407994586,
+          "observed": 0.42905710925010343,
+          "weight": 0.07620222370222372
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.7159385497615682,
+          "observed": 0.17866004962779156,
+          "weight": 0.004664351851851853
+        }
+      ],
+      "by_category": {
+        "refund": {
+          "tickets": 28,
+          "missed": 11,
+          "false_alerts": 1
+        },
+        "delivery": {
+          "tickets": 26,
+          "missed": 7,
+          "false_alerts": 1
+        },
+        "billing": {
+          "tickets": 33,
+          "missed": 11,
+          "false_alerts": 6
+        },
+        "access": {
+          "tickets": 24,
+          "missed": 9,
+          "false_alerts": 0
+        },
+        "recurring": {
+          "tickets": 23,
+          "missed": 4,
+          "false_alerts": 0
+        },
+        "technical": {
+          "tickets": 31,
+          "missed": 10,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 34,
+          "missed": 6,
+          "false_alerts": 12
+        },
+        "routine": {
+          "tickets": 25,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "cancellation": {
+          "tickets": 16,
+          "missed": 1,
+          "false_alerts": 5
+        }
+      },
+      "confusion_matrix": [
+        [
+          138,
+          25
+        ],
+        [
+          62,
+          15
+        ]
+      ],
+      "alert_rate": 0.16666666666666666,
+      "false_alerts_per_100": 10.416666666666666,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.25,
+          "recall": 0.03896103896103896
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.3333333333333333,
+          "recall": 0.1038961038961039
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.3888888888888889,
+          "recall": 0.18181818181818182
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.36666666666666664,
+          "recall": 0.2857142857142857
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.36904761904761907,
+          "recall": 0.4025974025974026
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.35833333333333334,
+          "recall": 0.5584415584415584
+        }
+      ],
+      "lead_messages": [
+        6,
+        4,
+        7,
+        5,
+        5,
+        7,
+        5,
+        3,
+        3,
+        6,
+        5,
+        3,
+        3,
+        6,
+        8
+      ],
+      "lead_minutes": [
+        38.0,
+        39.0,
+        79.0,
+        31.0,
+        57.0,
+        69.0,
+        45.0,
+        13.0,
+        33.0,
+        51.0,
+        27.0,
+        18.0,
+        27.0,
+        59.0,
+        42.0
+      ],
+      "detected_at_least": {
+        "1": 15,
+        "2": 15,
+        "3": 15
+      },
+      "ci95": {
+        "pr_auc": [
+          0.2870158376970473,
+          0.4529323408375023
+        ],
+        "precision": [
+          0.23076923076923078,
+          0.5313845050215207
+        ],
+        "recall": [
+          0.11199182501104728,
+          0.30203745448239977
+        ]
+      },
+      "inference_latency_ms": {
+        "p50": 0.6731270000273071,
+        "p95": 0.9347758500211967
+      }
+    },
+    "without_embeddings": {
+      "tickets": 240,
+      "positives": 77,
+      "threshold": 0.5754989671822466,
+      "precision": 0.40816326530612246,
+      "recall": 0.2597402597402597,
+      "f1": 0.31746031746031744,
+      "pr_auc": 0.4203306234118249,
+      "roc_auc": 0.5901920165723846,
+      "prefix_brier": 0.19830283317301164,
+      "prefix_ece": 0.05077315090865458,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.07236862992867764,
+          "observed": 0.06428997633241117,
+          "weight": 0.043387041199541204
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.15122654223420073,
+          "observed": 0.11957014972437804,
+          "weight": 0.11968301374551375
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.2489356780093576,
+          "observed": 0.183856027058547,
+          "weight": 0.16956526112776116
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.3524550886724324,
+          "observed": 0.2646870502016109,
+          "weight": 0.18388617169867175
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.44852615092454384,
+          "observed": 0.44491209157596523,
+          "weight": 0.259262173012173
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5460696547890219,
+          "observed": 0.46181449017133663,
+          "weight": 0.20173974173974177
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6160025529768862,
+          "observed": 0.6838388411045722,
+          "weight": 0.02247659747659748
+        }
+      ],
+      "by_category": {
+        "refund": {
+          "tickets": 28,
+          "missed": 11,
+          "false_alerts": 0
+        },
+        "delivery": {
+          "tickets": 26,
+          "missed": 2,
+          "false_alerts": 11
+        },
+        "billing": {
+          "tickets": 33,
+          "missed": 8,
+          "false_alerts": 9
+        },
+        "access": {
+          "tickets": 24,
+          "missed": 9,
+          "false_alerts": 0
+        },
+        "recurring": {
+          "tickets": 23,
+          "missed": 4,
+          "false_alerts": 0
+        },
+        "technical": {
+          "tickets": 31,
+          "missed": 10,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 34,
+          "missed": 6,
+          "false_alerts": 7
+        },
+        "routine": {
+          "tickets": 25,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "cancellation": {
+          "tickets": 16,
+          "missed": 4,
+          "false_alerts": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          134,
+          29
+        ],
+        [
+          57,
+          20
+        ]
+      ],
+      "alert_rate": 0.20416666666666666,
+      "false_alerts_per_100": 12.083333333333334,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.4166666666666667,
+          "recall": 0.06493506493506493
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.4166666666666667,
+          "recall": 0.12987012987012986
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.4722222222222222,
+          "recall": 0.22077922077922077
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.4,
+          "recall": 0.3116883116883117
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.38095238095238093,
+          "recall": 0.4155844155844156
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.35,
+          "recall": 0.5454545454545454
+        }
+      ],
+      "lead_messages": [
+        4,
+        8,
+        6,
+        9,
+        3,
+        4,
+        5,
+        4,
+        4,
+        6,
+        4,
+        6,
+        6,
+        8,
+        4,
+        4,
+        5,
+        8,
+        8,
+        3
+      ],
+      "lead_minutes": [
+        31.0,
+        27.0,
+        38.0,
+        58.0,
+        17.0,
+        39.0,
+        31.0,
+        50.0,
+        37.0,
+        49.0,
+        20.0,
+        51.0,
+        33.0,
+        56.0,
+        54.0,
+        29.0,
+        53.0,
+        81.0,
+        86.0,
+        38.0
+      ],
+      "detected_at_least": {
+        "1": 20,
+        "2": 20,
+        "3": 20
+      },
+      "ci95": {
+        "pr_auc": [
+          0.3181890432218268,
+          0.5390035669454827
+        ],
+        "precision": [
+          0.2590836526181354,
+          0.5422697368421052
+        ],
+        "recall": [
+          0.16,
+          0.3635167253521126
+        ]
+      },
+      "inference_latency_ms": {
+        "p50": 0.5101969999827816,
+        "p95": 0.7382649000248875
+      }
+    },
+    "without_sentiment_trend": {
+      "tickets": 240,
+      "positives": 77,
+      "threshold": 0.640743884095131,
+      "precision": 0.38461538461538464,
+      "recall": 0.19480519480519481,
+      "f1": 0.25862068965517243,
+      "pr_auc": 0.35841744221481653,
+      "roc_auc": 0.5736594693649908,
+      "prefix_brier": 0.20951031978898285,
+      "prefix_ece": 0.0377207879884071,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.07525199290489405,
+          "observed": 0.13664158570609472,
+          "weight": 0.04692595598845599
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.15215516680899377,
+          "observed": 0.1472542057922335,
+          "weight": 0.17581535362785367
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.2533228416443241,
+          "observed": 0.2591214031383246,
+          "weight": 0.19082212925962927
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.34830170682332756,
+          "observed": 0.3431772772131101,
+          "weight": 0.19256710881710884
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.44964630346779827,
+          "observed": 0.4481707351678342,
+          "weight": 0.18336221648721648
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.5440036577938248,
+          "observed": 0.43735537840735905,
+          "weight": 0.13100324444074446
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6391420025424331,
+          "observed": 0.4368688308319471,
+          "weight": 0.07483963952713953
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.715751322739618,
+          "observed": 0.17866004962779156,
+          "weight": 0.004664351851851853
+        }
+      ],
+      "by_category": {
+        "refund": {
+          "tickets": 28,
+          "missed": 11,
+          "false_alerts": 1
+        },
+        "delivery": {
+          "tickets": 26,
+          "missed": 7,
+          "false_alerts": 1
+        },
+        "billing": {
+          "tickets": 33,
+          "missed": 11,
+          "false_alerts": 5
+        },
+        "access": {
+          "tickets": 24,
+          "missed": 9,
+          "false_alerts": 0
+        },
+        "recurring": {
+          "tickets": 23,
+          "missed": 4,
+          "false_alerts": 0
+        },
+        "technical": {
+          "tickets": 31,
+          "missed": 10,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 34,
+          "missed": 6,
+          "false_alerts": 12
+        },
+        "routine": {
+          "tickets": 25,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "cancellation": {
+          "tickets": 16,
+          "missed": 1,
+          "false_alerts": 5
+        }
+      },
+      "confusion_matrix": [
+        [
+          139,
+          24
+        ],
+        [
+          62,
+          15
+        ]
+      ],
+      "alert_rate": 0.1625,
+      "false_alerts_per_100": 10.0,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.25,
+          "recall": 0.03896103896103896
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.3333333333333333,
+          "recall": 0.1038961038961039
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.3888888888888889,
+          "recall": 0.18181818181818182
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.36666666666666664,
+          "recall": 0.2857142857142857
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.36904761904761907,
+          "recall": 0.4025974025974026
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.35833333333333334,
+          "recall": 0.5584415584415584
+        }
+      ],
+      "lead_messages": [
+        6,
+        4,
+        7,
+        5,
+        5,
+        7,
+        5,
+        3,
+        3,
+        6,
+        5,
+        3,
+        3,
+        6,
+        8
+      ],
+      "lead_minutes": [
+        38.0,
+        39.0,
+        79.0,
+        31.0,
+        57.0,
+        69.0,
+        45.0,
+        13.0,
+        33.0,
+        51.0,
+        27.0,
+        18.0,
+        27.0,
+        59.0,
+        42.0
+      ],
+      "detected_at_least": {
+        "1": 15,
+        "2": 15,
+        "3": 15
+      },
+      "ci95": {
+        "pr_auc": [
+          0.28628603168698624,
+          0.4544980117600884
+        ],
+        "precision": [
+          0.2434959349593496,
+          0.5418918918918918
+        ],
+        "recall": [
+          0.11199182501104728,
+          0.30203745448239977
+        ]
+      },
+      "inference_latency_ms": {
+        "p50": 0.6950805000656146,
+        "p95": 0.964339499972766
+      }
+    },
+    "without_history": {
+      "tickets": 240,
+      "positives": 77,
+      "threshold": 0.6094955568677074,
+      "precision": 0.3076923076923077,
+      "recall": 0.2077922077922078,
+      "f1": 0.24806201550387597,
+      "pr_auc": 0.35153961628690944,
+      "roc_auc": 0.5718269460600749,
+      "prefix_brier": 0.20976558050612046,
+      "prefix_ece": 0.03938856674485318,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "predicted": 0.07641326671394966,
+          "observed": 0.15116801734509064,
+          "weight": 0.04547919672919672
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "predicted": 0.15106757158469541,
+          "observed": 0.1429238493753026,
+          "weight": 0.1724426268176269
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.30000000000000004,
+          "predicted": 0.25436281753626244,
+          "observed": 0.2578518683017637,
+          "weight": 0.19800728206978208
+        },
+        {
+          "lower": 0.30000000000000004,
+          "upper": 0.4,
+          "predicted": 0.34886438558327476,
+          "observed": 0.36099222093604144,
+          "weight": 0.1984948384948385
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "predicted": 0.4522546528615491,
+          "observed": 0.4320383060299065,
+          "weight": 0.1982305426055426
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6000000000000001,
+          "predicted": 0.548275221296231,
+          "observed": 0.44283744289231014,
+          "weight": 0.1232805735930736
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.7000000000000001,
+          "predicted": 0.6331224350828517,
+          "observed": 0.4249410940523655,
+          "weight": 0.06040753228253229
+        },
+        {
+          "lower": 0.7000000000000001,
+          "upper": 0.8,
+          "predicted": 0.7106350427858658,
+          "observed": 0.18987341772151897,
+          "weight": 0.003657407407407408
+        }
+      ],
+      "by_category": {
+        "refund": {
+          "tickets": 28,
+          "missed": 10,
+          "false_alerts": 1
+        },
+        "delivery": {
+          "tickets": 26,
+          "missed": 8,
+          "false_alerts": 2
+        },
+        "billing": {
+          "tickets": 33,
+          "missed": 10,
+          "false_alerts": 8
+        },
+        "access": {
+          "tickets": 24,
+          "missed": 9,
+          "false_alerts": 0
+        },
+        "recurring": {
+          "tickets": 23,
+          "missed": 4,
+          "false_alerts": 2
+        },
+        "technical": {
+          "tickets": 31,
+          "missed": 10,
+          "false_alerts": 0
+        },
+        "defect": {
+          "tickets": 34,
+          "missed": 5,
+          "false_alerts": 16
+        },
+        "routine": {
+          "tickets": 25,
+          "missed": 3,
+          "false_alerts": 0
+        },
+        "cancellation": {
+          "tickets": 16,
+          "missed": 2,
+          "false_alerts": 7
+        }
+      },
+      "confusion_matrix": [
+        [
+          127,
+          36
+        ],
+        [
+          61,
+          16
+        ]
+      ],
+      "alert_rate": 0.21666666666666667,
+      "false_alerts_per_100": 15.0,
+      "alert_budget": [
+        {
+          "budget": 0.05,
+          "precision": 0.3333333333333333,
+          "recall": 0.05194805194805195
+        },
+        {
+          "budget": 0.1,
+          "precision": 0.3333333333333333,
+          "recall": 0.1038961038961039
+        },
+        {
+          "budget": 0.15,
+          "precision": 0.2777777777777778,
+          "recall": 0.12987012987012986
+        },
+        {
+          "budget": 0.25,
+          "precision": 0.35,
+          "recall": 0.2727272727272727
+        },
+        {
+          "budget": 0.35,
+          "precision": 0.38095238095238093,
+          "recall": 0.4155844155844156
+        },
+        {
+          "budget": 0.5,
+          "precision": 0.36666666666666664,
+          "recall": 0.5714285714285714
+        }
+      ],
+      "lead_messages": [
+        6,
+        7,
+        2,
+        4,
+        5,
+        5,
+        4,
+        6,
+        7,
+        5,
+        3,
+        3,
+        4,
+        3,
+        3,
+        7
+      ],
+      "lead_minutes": [
+        38.0,
+        82.0,
+        27.0,
+        39.0,
+        31.0,
+        38.0,
+        37.0,
+        69.0,
+        69.0,
+        45.0,
+        13.0,
+        33.0,
+        18.0,
+        18.0,
+        27.0,
+        37.0
+      ],
+      "detected_at_least": {
+        "1": 16,
+        "2": 16,
+        "3": 15
+      },
+      "ci95": {
+        "pr_auc": [
+          0.28389851141989747,
+          0.45496399760412554
+        ],
+        "precision": [
+          0.19453359007274285,
+          0.43240780445969124
+        ],
+        "recall": [
+          0.1263946638946639,
+          0.29591810119979134
+        ]
+      },
+      "inference_latency_ms": {
+        "p50": 0.6333420000146361,
+        "p95": 0.9174615000347327
+      }
+    }
+  },
+  "inference_latency_ms": {
+    "p50": 2.0489204999876165,
+    "p95": 2.7356506499813795
+  }
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Defect \u00b7 case T00052",
+    "context": {
+      "category": "defect",
+      "prior_tickets": 6,
+      "prior_escalations": null,
+      "tenure_days": null
+    },
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I'm following up regarding broken replacement.",
+        "at": "2025-02-22T00:05:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "We are back where we started with broken replacement.",
+        "at": "2025-02-22T00:12:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with broken replacement.",
+        "at": "2025-02-22T00:28:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "That makes sense.",
+        "at": "2025-02-22T00:32:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Try opening a fresh session and check again.",
+        "at": "2025-02-22T00:50:00Z"
+      }
+    ]
+  },
+  {
+    "name": "Access \u00b7 case T00022",
+    "context": {
+      "category": "access",
+      "prior_tickets": 3,
+      "prior_escalations": null,
+      "tenure_days": 424
+    },
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Please advise on locked account.",
+        "at": "2025-01-23T00:07:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with locked account.",
+        "at": "2025-01-23T00:21:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "That makes sense.",
+        "at": "2025-01-23T00:25:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Try opening a fresh session and check again.",
+        "at": "2025-01-23T00:39:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "This is upsetting. I keep running into locked account.",
+        "at": "2025-01-23T00:45:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Try opening a fresh session and check again.",
+        "at": "2025-01-23T01:00:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with locked account.",
+        "at": "2025-01-23T01:19:00Z"
+      }
+    ]
+  },
+  {
+    "name": "Access \u00b7 case T00036",
+    "context": {
+      "category": "access",
+      "prior_tickets": null,
+      "prior_escalations": null,
+      "tenure_days": 992
+    },
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Please advise on locked account.",
+        "at": "2025-02-06T00:03:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with locked account.",
+        "at": "2025-02-06T00:12:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "That makes sense.",
+        "at": "2025-02-06T00:15:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with locked account.",
+        "at": "2025-02-06T00:24:00Z"
+      }
+    ]
+  },
+  {
+    "name": "Routine \u00b7 case T00095",
+    "context": {
+      "category": "routine",
+      "prior_tickets": 0,
+      "prior_escalations": 0,
+      "tenure_days": 398
+    },
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I'm following up regarding receipt request.",
+        "at": "2025-04-06T00:04:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Try opening a fresh session and check again.",
+        "at": "2025-04-06T00:08:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "This is upsetting. I keep running into receipt request.",
+        "at": "2025-04-06T00:14:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with receipt request.",
+        "at": "2025-04-06T00:18:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "We are back where we started with receipt request.",
+        "at": "2025-04-06T00:24:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with receipt request.",
+        "at": "2025-04-06T00:33:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "I'll keep an eye on it. Thanks.",
+        "at": "2025-04-06T00:38:00Z"
+      }
+    ]
+  },
+  {
+    "name": "Routine \u00b7 case T00058",
+    "context": {
+      "category": "routine",
+      "prior_tickets": 0,
+      "prior_escalations": 0,
+      "tenure_days": 372
+    },
+    "messages": [
+      {
+        "role": "customer",
+        "text": "I'm following up regarding receipt request.",
+        "at": "2025-02-28T00:06:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with receipt request.",
+        "at": "2025-02-28T00:13:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "We are back where we started with receipt request.",
+        "at": "2025-02-28T00:18:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with receipt request.",
+        "at": "2025-02-28T00:29:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Try opening a fresh session and check again.",
+        "at": "2025-02-28T00:36:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "This is upsetting. I keep running into receipt request.",
+        "at": "2025-02-28T00:40:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with receipt request.",
+        "at": "2025-02-28T00:50:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "We are back where we started with receipt request.",
+        "at": "2025-02-28T00:56:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Try opening a fresh session and check again.",
+        "at": "2025-02-28T01:01:00Z"
+      }
+    ]
+  },
+  {
+    "name": "Routine \u00b7 case T00009",
+    "context": {
+      "category": "routine",
+      "prior_tickets": 0,
+      "prior_escalations": 0,
+      "tenure_days": 1164
+    },
+    "messages": [
+      {
+        "role": "customer",
+        "text": "Please advise on receipt request.",
+        "at": "2025-01-10T00:02:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with receipt request.",
+        "at": "2025-01-10T00:12:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "That makes sense.",
+        "at": "2025-01-10T00:18:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Let me confirm what happened with receipt request.",
+        "at": "2025-01-10T00:33:00Z"
+      },
+      {
+        "role": "customer",
+        "text": "This is upsetting. I keep running into receipt request.",
+        "at": "2025-01-10T00:34:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Try opening a fresh session and check again.",
+        "at": "2025-01-10T00:46:00Z"
+      }
+    ]
+  }
+]
