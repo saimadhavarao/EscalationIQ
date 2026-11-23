@@ -70,4 +70,18 @@ The system is advisory and designed for a local portfolio demo. Synthetic outcom
 
 ### Build verification
 
-The delivered experiment trained and evaluated all three candidates and the ablations. The backend passed 12 tests with SQLite and PostgreSQL 18.7, with the SQLite instance of the PostgreSQL-only lock test skipped. Three frontend tests passed, including replay through a running Vite proxy, FastAPI and PostgreSQL. The production frontend built successfully. The development environment had no Docker daemon and blocked graphical Chromium initialization. Docker Desktop/Compose startup and a full browser rendering remain unverified here.
+Local verification (Windows, November 2026)
+
+Backend: 12 tests passed, 1 expected SQLite skip.
+
+Frontend: 2 tests passed, 1 skipped.
+
+Production frontend: TypeScript compilation and Vite build succeeded.
+
+Docker Compose: PostgreSQL, FastAPI, and React frontend services healthy.
+
+Browser: Live replay, risk monitoring, persistence, and evaluation dashboard verified.
+
+Security: npm audit reported 0 vulnerabilities.
+
+The project uses synthetic data and is intended as a portfolio demonstration, not a production-ready escalation prediction service.
